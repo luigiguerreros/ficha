@@ -2,74 +2,78 @@
 
 <h1>Gestions</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Codigo</th>
-      <th>Origen</th>
-      <th>Campana</th>
-      <th>Zonal</th>
-      <th>Tipo</th>
-      <th>Subtipo</th>
-      <th>Paquete</th>
-      <th>Linea</th>
-      <th>Internet</th>
-      <th>Administrativa</th>
-      <th>Tecno</th>
-      <th>Modopago</th>
-      <th>Monto instalacion</th>
-      <th>Promocion</th>
-      <th>Descuento</th>
-      <th>Equipamiento</th>
-      <th>Telefono</th>
-      <th>Caracteristicastelefono</th>
-      <th>Modem</th>
-      <th>Caracteristicamodem</th>
-      <th>Antenapunto</th>
-      <th>Deco1</th>
-      <th>Caracteristicadeco1</th>
-      <th>Deco2</th>
-      <th>Caracteristicadeco2</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @gestions.each do |gestion| %>
-      <tr>
-        <td><%= gestion.codigo %></td>
-        <td><%= gestion.origen %></td>
-        <td><%= gestion.campana %></td>
-        <td><%= gestion.zonal %></td>
-        <td><%= gestion.tipo %></td>
-        <td><%= gestion.subtipo %></td>
-        <td><%= gestion.paquete %></td>
-        <td><%= gestion.linea %></td>
-        <td><%= gestion.internet %></td>
-        <td><%= gestion.administrativa %></td>
-        <td><%= gestion.tecno %></td>
-        <td><%= gestion.modopago %></td>
-        <td><%= gestion.monto_instalacion %></td>
-        <td><%= gestion.promocion %></td>
-        <td><%= gestion.descuento %></td>
-        <td><%= gestion.equipamiento %></td>
-        <td><%= gestion.telefono %></td>
-        <td><%= gestion.caracteristicastelefono %></td>
-        <td><%= gestion.modem %></td>
-        <td><%= gestion.caracteristicamodem %></td>
-        <td><%= gestion.antenapunto %></td>
-        <td><%= gestion.deco1 %></td>
-        <td><%= gestion.caracteristicadeco1 %></td>
-        <td><%= gestion.deco2 %></td>
-        <td><%= gestion.caracteristicadeco2 %></td>
-        <td><%= link_to 'Show', gestion %></td>
-        <td><%= link_to 'Edit', edit_gestion_path(gestion) %></td>
-        <td><%= link_to 'Destroy', gestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
 <%= link_to 'New Gestion', new_gestion_path %>
+</br>
+</br>
+<hr>
+</br>
+
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Codigo</th>
+        <th>Origen</th>
+        <th>Campana</th>
+        <th>Zonal</th>
+        <th>Tipo</th>
+        <th>Subtipo</th>
+        <th>Paquete</th>
+        <th>Linea</th>
+        <th>Internet</th>
+        <th>Administrativa</th>
+        <th>Tecno</th>
+        <th>Modopago</th>
+        <th>Monto instalacion</th>
+        <th>Promocion</th>
+        <th>Descuento</th>
+        <th>Equipamiento</th>
+        <th>Telefono</th>
+        <th>Caracteristicastelefono</th>
+        <th>Modem</th>
+        <th>Caracteristicamodem</th>
+        <th>Antenapunto</th>
+        <th>Deco1</th>
+        <th>Caracteristicadeco1</th>
+        <th>Deco2</th>
+        <th>Caracteristicadeco2</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @gestions.each do |gestion| %>
+        <tr>
+          <td><%= gestion.codigo %></td>
+          <td><%= gestion.origen %></td>
+          <td><%= gestion.campana %></td>
+          <td><%= gestion.zonal %></td>
+          <td><%= gestion.tipo %></td>
+          <td><%= gestion.subtipo %></td>
+          <td><%= gestion.paquete %></td>
+          <td><%= gestion.linea %></td>
+          <td><%= gestion.internet %></td>
+          <td><%= gestion.administrativa %></td>
+          <td><%= gestion.tecno %></td>
+          <td><%= gestion.modopago %></td>
+          <td><%= gestion.monto_instalacion %></td>
+          <td><%= gestion.promocion %></td>
+          <td><%= gestion.descuento %></td>
+          <td><%= gestion.equipamiento %></td>
+          <td><%= gestion.telefono %></td>
+          <td><%= gestion.caracteristicastelefono %></td>
+          <td><%= gestion.modem %></td>
+          <td><%= gestion.caracteristicamodem %></td>
+          <td><%= gestion.antenapunto %></td>
+          <td><%= gestion.deco1 %></td>
+          <td><%= gestion.caracteristicadeco1 %></td>
+          <td><%= gestion.deco2 %></td>
+          <td><%= gestion.caracteristicadeco2 %></td>
+          <td><%= link_to 'Show', gestion %></td>
+          <td><%= link_to 'Edit', edit_gestion_path(gestion) %></td>
+          <td><%= link_to 'Destroy', gestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
