@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lineas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pack</th>
+      <th>Tipo pago</th>
+      <th>Costo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lineas.each do |linea| %>
+      <tr>
+        <td><%= linea.pack %></td>
+        <td><%= linea.tipo_pago %></td>
+        <td><%= linea.costo %></td>
+        <td><%= link_to 'Show', linea %></td>
+        <td><%= link_to 'Edit', edit_linea_path(linea) %></td>
+        <td><%= link_to 'Destroy', linea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Linea', new_linea_path %>

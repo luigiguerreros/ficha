@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Zonals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre zona</th>
+      <th>Descripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zonals.each do |zonal| %>
+      <tr>
+        <td><%= zonal.nombre_zona %></td>
+        <td><%= zonal.descripcion %></td>
+        <td><%= link_to 'Show', zonal %></td>
+        <td><%= link_to 'Edit', edit_zonal_path(zonal) %></td>
+        <td><%= link_to 'Destroy', zonal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Zonal', new_zonal_path %>

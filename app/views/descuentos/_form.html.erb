@@ -1,0 +1,27 @@
+<%= form_for(descuento) do |f| %>
+  <% if descuento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(descuento.errors.count, "error") %> prohibited this descuento from being saved:</h2>
+
+      <ul>
+      <% descuento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ps_descuento %>
+    <%= f.text_field :ps_descuento %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descripcion %>
+    <%= f.text_field :descripcion %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

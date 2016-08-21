@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Antenapuntos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Nombre</th>
+      <th>Ps</th>
+      <th>Oc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @antenapuntos.each do |antenapunto| %>
+      <tr>
+        <td><%= antenapunto.tipo %></td>
+        <td><%= antenapunto.nombre %></td>
+        <td><%= antenapunto.ps %></td>
+        <td><%= antenapunto.oc %></td>
+        <td><%= link_to 'Show', antenapunto %></td>
+        <td><%= link_to 'Edit', edit_antenapunto_path(antenapunto) %></td>
+        <td><%= link_to 'Destroy', antenapunto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Antenapunto', new_antenapunto_path %>

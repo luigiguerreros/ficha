@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre origen:</strong>
+  <%= @origen.nombre_origen %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @origen.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_origen_path(@origen) %> |
+<%= link_to 'Back', origens_path %>

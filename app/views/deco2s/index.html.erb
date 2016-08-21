@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Deco2s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Ps</th>
+      <th>Oc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deco2s.each do |deco2| %>
+      <tr>
+        <td><%= deco2.tipo %></td>
+        <td><%= deco2.ps %></td>
+        <td><%= deco2.oc %></td>
+        <td><%= link_to 'Show', deco2 %></td>
+        <td><%= link_to 'Edit', edit_deco2_path(deco2) %></td>
+        <td><%= link_to 'Destroy', deco2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Deco2', new_deco2_path %>

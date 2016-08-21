@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo ocpaquete:</strong>
+  <%= @ocpaquete.tipo_ocpaquete %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @ocpaquete.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_ocpaquete_path(@ocpaquete) %> |
+<%= link_to 'Back', ocpaquetes_path %>

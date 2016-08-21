@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pack:</strong>
+  <%= @internet.pack %>
+</p>
+
+<p>
+  <strong>Tipo pago:</strong>
+  <%= @internet.tipo_pago %>
+</p>
+
+<p>
+  <strong>Costo:</strong>
+  <%= @internet.costo %>
+</p>
+
+<%= link_to 'Edit', edit_internet_path(@internet) %> |
+<%= link_to 'Back', internets_path %>

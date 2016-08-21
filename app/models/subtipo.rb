@@ -1,0 +1,2 @@
+class Subtipo < ApplicationRecord
+end

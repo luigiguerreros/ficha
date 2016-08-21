@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pack: MyString
+  tipo_pago: MyString
+  costo: 9.99
+
+two:
+  pack: MyString
+  tipo_pago: MyString
+  costo: 9.99

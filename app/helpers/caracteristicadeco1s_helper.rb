@@ -1,0 +1,2 @@
+module Caracteristicadeco1sHelper
+end

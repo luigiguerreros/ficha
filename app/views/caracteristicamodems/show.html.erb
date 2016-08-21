@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pack:</strong>
+  <%= @caracteristicamodem.pack %>
+</p>
+
+<p>
+  <strong>Tipo pago:</strong>
+  <%= @caracteristicamodem.tipo_pago %>
+</p>
+
+<p>
+  <strong>Costo:</strong>
+  <%= @caracteristicamodem.costo %>
+</p>
+
+<%= link_to 'Edit', edit_caracteristicamodem_path(@caracteristicamodem) %> |
+<%= link_to 'Back', caracteristicamodems_path %>

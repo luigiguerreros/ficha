@@ -1,0 +1,1 @@
+json.partial! "deco2s/deco2", deco2: @deco2

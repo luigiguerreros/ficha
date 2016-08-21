@@ -1,0 +1,1 @@
+json.partial! "caracteristicadeco1s/caracteristicadeco1", caracteristicadeco1: @caracteristicadeco1

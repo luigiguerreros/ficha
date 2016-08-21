@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_modem: MyString
+  ps_modem: MyString
+  oc_modem: MyString
+
+two:
+  nombre_modem: MyString
+  ps_modem: MyString
+  oc_modem: MyString

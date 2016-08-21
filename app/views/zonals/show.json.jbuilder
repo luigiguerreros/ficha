@@ -1,0 +1,1 @@
+json.partial! "zonals/zonal", zonal: @zonal

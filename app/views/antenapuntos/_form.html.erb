@@ -1,0 +1,37 @@
+<%= form_for(antenapunto) do |f| %>
+  <% if antenapunto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(antenapunto.errors.count, "error") %> prohibited this antenapunto from being saved:</h2>
+
+      <ul>
+      <% antenapunto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tipo %>
+    <%= f.text_field :tipo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nombre %>
+    <%= f.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ps %>
+    <%= f.text_field :ps %>
+  </div>
+
+  <div class="field">
+    <%= f.label :oc %>
+    <%= f.text_field :oc %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

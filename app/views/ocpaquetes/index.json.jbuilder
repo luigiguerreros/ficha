@@ -1,0 +1,1 @@
+json.array! @ocpaquetes, partial: 'ocpaquetes/ocpaquete', as: :ocpaquete

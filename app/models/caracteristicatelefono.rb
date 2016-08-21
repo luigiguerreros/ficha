@@ -1,0 +1,2 @@
+class Caracteristicatelefono < ApplicationRecord
+end

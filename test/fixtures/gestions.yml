@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  origen: one
+  campana: one
+  zonal: one
+  tipo: one
+  subtipo: one
+  paquete: one
+  linea: one
+  internet: one
+  administrativa: one
+  tecno: one
+  modopago: one
+  monto_instalacion: 9.99
+  promocion: one
+  descuento: one
+  equipamiento: MyString
+  telefono: one
+  caracteristicastelefono: one
+  modem: one
+  caracteristicamodem: one
+  antenapunto: one
+  deco1: one
+  caracteristicadeco1: one
+  deco2: one
+  caracteristicadeco2: one
+
+two:
+  codigo: MyString
+  origen: two
+  campana: two
+  zonal: two
+  tipo: two
+  subtipo: two
+  paquete: two
+  linea: two
+  internet: two
+  administrativa: two
+  tecno: two
+  modopago: two
+  monto_instalacion: 9.99
+  promocion: two
+  descuento: two
+  equipamiento: MyString
+  telefono: two
+  caracteristicastelefono: two
+  modem: two
+  caracteristicamodem: two
+  antenapunto: two
+  deco1: two
+  caracteristicadeco1: two
+  deco2: two
+  caracteristicadeco2: two

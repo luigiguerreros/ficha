@@ -1,0 +1,1 @@
+json.partial! "administrativas/administrativa", administrativa: @administrativa

@@ -1,0 +1,1 @@
+json.partial! "modopagos/modopago", modopago: @modopago

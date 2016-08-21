@@ -1,0 +1,2 @@
+class Antenapunto < ApplicationRecord
+end

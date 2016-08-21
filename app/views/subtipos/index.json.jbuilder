@@ -1,0 +1,1 @@
+json.array! @subtipos, partial: 'subtipos/subtipo', as: :subtipo

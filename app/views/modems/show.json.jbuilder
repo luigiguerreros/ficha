@@ -1,0 +1,1 @@
+json.partial! "modems/modem", modem: @modem

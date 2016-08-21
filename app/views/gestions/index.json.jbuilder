@@ -1,0 +1,1 @@
+json.array! @gestions, partial: 'gestions/gestion', as: :gestion

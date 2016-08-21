@@ -1,0 +1,1 @@
+json.partial! "antenapuntos/antenapunto", antenapunto: @antenapunto

@@ -1,0 +1,1 @@
+json.array! @caracteristicadeco2s, partial: 'caracteristicadeco2s/caracteristicadeco2', as: :caracteristicadeco2

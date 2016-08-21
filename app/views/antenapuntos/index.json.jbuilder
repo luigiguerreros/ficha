@@ -1,0 +1,1 @@
+json.array! @antenapuntos, partial: 'antenapuntos/antenapunto', as: :antenapunto

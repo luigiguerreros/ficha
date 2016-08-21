@@ -1,0 +1,37 @@
+<%= form_for(paquete) do |f| %>
+  <% if paquete.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(paquete.errors.count, "error") %> prohibited this paquete from being saved:</h2>
+
+      <ul>
+      <% paquete.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ps_paquete %>
+    <%= f.text_field :ps_paquete %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nombre_paquete %>
+    <%= f.text_field :nombre_paquete %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo_paquete %>
+    <%= f.text_field :tipo_paquete %>
+  </div>
+
+  <div class="field">
+    <%= f.label :renta %>
+    <%= f.text_field :renta %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

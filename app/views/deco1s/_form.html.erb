@@ -1,0 +1,32 @@
+<%= form_for(deco1) do |f| %>
+  <% if deco1.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(deco1.errors.count, "error") %> prohibited this deco1 from being saved:</h2>
+
+      <ul>
+      <% deco1.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tipo %>
+    <%= f.text_field :tipo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ps %>
+    <%= f.text_field :ps %>
+  </div>
+
+  <div class="field">
+    <%= f.label :oc %>
+    <%= f.text_field :oc %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

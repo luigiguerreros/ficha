@@ -1,0 +1,27 @@
+<%= form_for(subtipo) do |f| %>
+  <% if subtipo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(subtipo.errors.count, "error") %> prohibited this subtipo from being saved:</h2>
+
+      <ul>
+      <% subtipo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_subtipo %>
+    <%= f.text_field :nombre_subtipo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descripcion %>
+    <%= f.text_field :descripcion %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

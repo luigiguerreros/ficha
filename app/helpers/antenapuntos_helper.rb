@@ -1,0 +1,2 @@
+module AntenapuntosHelper
+end

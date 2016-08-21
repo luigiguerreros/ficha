@@ -1,0 +1,27 @@
+<%= form_for(administrativa) do |f| %>
+  <% if administrativa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(administrativa.errors.count, "error") %> prohibited this administrativa from being saved:</h2>
+
+      <ul>
+      <% administrativa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ps_administrativa %>
+    <%= f.text_field :ps_administrativa %>
+  </div>
+
+  <div class="field">
+    <%= f.label :velocidad %>
+    <%= f.text_field :velocidad %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

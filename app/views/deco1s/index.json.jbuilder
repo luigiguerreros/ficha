@@ -1,0 +1,1 @@
+json.array! @deco1s, partial: 'deco1s/deco1', as: :deco1

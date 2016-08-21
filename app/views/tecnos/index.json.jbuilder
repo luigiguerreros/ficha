@@ -1,0 +1,1 @@
+json.array! @tecnos, partial: 'tecnos/tecno', as: :tecno

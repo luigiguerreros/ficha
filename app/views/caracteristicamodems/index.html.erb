@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Caracteristicamodems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pack</th>
+      <th>Tipo pago</th>
+      <th>Costo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @caracteristicamodems.each do |caracteristicamodem| %>
+      <tr>
+        <td><%= caracteristicamodem.pack %></td>
+        <td><%= caracteristicamodem.tipo_pago %></td>
+        <td><%= caracteristicamodem.costo %></td>
+        <td><%= link_to 'Show', caracteristicamodem %></td>
+        <td><%= link_to 'Edit', edit_caracteristicamodem_path(caracteristicamodem) %></td>
+        <td><%= link_to 'Destroy', caracteristicamodem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Caracteristicamodem', new_caracteristicamodem_path %>

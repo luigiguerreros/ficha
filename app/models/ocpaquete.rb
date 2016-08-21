@@ -1,0 +1,2 @@
+class Ocpaquete < ApplicationRecord
+end

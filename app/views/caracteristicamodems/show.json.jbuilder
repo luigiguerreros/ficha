@@ -1,0 +1,1 @@
+json.partial! "caracteristicamodems/caracteristicamodem", caracteristicamodem: @caracteristicamodem

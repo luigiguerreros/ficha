@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre camapana:</strong>
+  <%= @campana.nombre_camapana %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @campana.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_campana_path(@campana) %> |
+<%= link_to 'Back', campanas_path %>

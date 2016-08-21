@@ -1,0 +1,1 @@
+json.partial! "subtipos/subtipo", subtipo: @subtipo

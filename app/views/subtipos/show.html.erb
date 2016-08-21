@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre subtipo:</strong>
+  <%= @subtipo.nombre_subtipo %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @subtipo.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_subtipo_path(@subtipo) %> |
+<%= link_to 'Back', subtipos_path %>

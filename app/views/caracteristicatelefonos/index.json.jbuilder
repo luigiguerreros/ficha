@@ -1,0 +1,1 @@
+json.array! @caracteristicatelefonos, partial: 'caracteristicatelefonos/caracteristicatelefono', as: :caracteristicatelefono

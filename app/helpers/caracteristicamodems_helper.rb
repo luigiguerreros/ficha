@@ -1,0 +1,2 @@
+module CaracteristicamodemsHelper
+end

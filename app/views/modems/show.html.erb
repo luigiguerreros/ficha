@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre modem:</strong>
+  <%= @modem.nombre_modem %>
+</p>
+
+<p>
+  <strong>Ps modem:</strong>
+  <%= @modem.ps_modem %>
+</p>
+
+<p>
+  <strong>Oc modem:</strong>
+  <%= @modem.oc_modem %>
+</p>
+
+<%= link_to 'Edit', edit_modem_path(@modem) %> |
+<%= link_to 'Back', modems_path %>

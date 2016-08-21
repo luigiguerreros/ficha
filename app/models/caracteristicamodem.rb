@@ -1,0 +1,2 @@
+class Caracteristicamodem < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Zonal < ApplicationRecord
+end

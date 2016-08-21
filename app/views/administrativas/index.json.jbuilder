@@ -1,0 +1,1 @@
+json.array! @administrativas, partial: 'administrativas/administrativa', as: :administrativa

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  modo_pago: MyString
+  descripcion: MyString
+
+two:
+  modo_pago: MyString
+  descripcion: MyString

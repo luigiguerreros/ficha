@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tecnos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo tecnologia</th>
+      <th>Descripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tecnos.each do |tecno| %>
+      <tr>
+        <td><%= tecno.tipo_tecnologia %></td>
+        <td><%= tecno.descripcion %></td>
+        <td><%= link_to 'Show', tecno %></td>
+        <td><%= link_to 'Edit', edit_tecno_path(tecno) %></td>
+        <td><%= link_to 'Destroy', tecno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tecno', new_tecno_path %>

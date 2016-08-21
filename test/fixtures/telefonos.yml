@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_telefono: MyString
+  ps_telefono: MyString
+  oc_telefono: MyString
+
+two:
+  nombre_telefono: MyString
+  ps_telefono: MyString
+  oc_telefono: MyString

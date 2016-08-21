@@ -1,0 +1,1 @@
+json.array! @modopagos, partial: 'modopagos/modopago', as: :modopago

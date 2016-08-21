@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ocpaquetes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo ocpaquete</th>
+      <th>Descripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ocpaquetes.each do |ocpaquete| %>
+      <tr>
+        <td><%= ocpaquete.tipo_ocpaquete %></td>
+        <td><%= ocpaquete.descripcion %></td>
+        <td><%= link_to 'Show', ocpaquete %></td>
+        <td><%= link_to 'Edit', edit_ocpaquete_path(ocpaquete) %></td>
+        <td><%= link_to 'Destroy', ocpaquete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ocpaquete', new_ocpaquete_path %>

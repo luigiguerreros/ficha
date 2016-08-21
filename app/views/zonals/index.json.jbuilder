@@ -1,0 +1,1 @@
+json.array! @zonals, partial: 'zonals/zonal', as: :zonal

@@ -1,0 +1,142 @@
+<%= form_for(gestion) do |f| %>
+  <% if gestion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gestion.errors.count, "error") %> prohibited this gestion from being saved:</h2>
+
+      <ul>
+      <% gestion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo %>
+    <%= f.text_field :codigo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :origen_id %>
+    <%= f.text_field :origen_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :campana_id %>
+    <%= f.text_field :campana_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :zonal_id %>
+    <%= f.text_field :zonal_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo_id %>
+    <%= f.text_field :tipo_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :subtipo_id %>
+    <%= f.text_field :subtipo_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :paquete_id %>
+    <%= f.text_field :paquete_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :linea_id %>
+    <%= f.text_field :linea_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :internet_id %>
+    <%= f.text_field :internet_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :administrativa_id %>
+    <%= f.text_field :administrativa_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tecno_id %>
+    <%= f.text_field :tecno_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :modopago_id %>
+    <%= f.text_field :modopago_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :monto_instalacion %>
+    <%= f.text_field :monto_instalacion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :promocion_id %>
+    <%= f.text_field :promocion_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descuento_id %>
+    <%= f.text_field :descuento_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :equipamiento %>
+    <%= f.text_field :equipamiento %>
+  </div>
+
+  <div class="field">
+    <%= f.label :telefono_id %>
+    <%= f.text_field :telefono_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :caracteristicastelefono_id %>
+    <%= f.text_field :caracteristicastelefono_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :modem_id %>
+    <%= f.text_field :modem_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :caracteristicamodem_id %>
+    <%= f.text_field :caracteristicamodem_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :antenapunto_id %>
+    <%= f.text_field :antenapunto_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :deco1_id %>
+    <%= f.text_field :deco1_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :caracteristicadeco1_id %>
+    <%= f.text_field :caracteristicadeco1_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :deco2_id %>
+    <%= f.text_field :deco2_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :caracteristicadeco2_id %>
+    <%= f.text_field :caracteristicadeco2_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

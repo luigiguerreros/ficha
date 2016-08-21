@@ -1,0 +1,1 @@
+json.partial! "tecnos/tecno", tecno: @tecno
