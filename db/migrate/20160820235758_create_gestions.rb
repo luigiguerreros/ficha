@@ -18,7 +18,7 @@ class CreateGestions < ActiveRecord::Migration[5.0]
       t.references :descuento, foreign_key: true
       t.string :equipamiento
       t.references :telefono, foreign_key: true
-      t.references :caracteristicastelefono, foreign_key: true
+      t.references :caracteristicatelefono, foreign_key: true
       t.references :modem, foreign_key: true
       t.references :caracteristicamodem, foreign_key: true
       t.references :antenapunto, foreign_key: true
