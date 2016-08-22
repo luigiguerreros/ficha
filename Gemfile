@@ -54,3 +54,4 @@ group :production do
 end
 
 gem 'rails-assets-bootstrap', source: 'https://rails-assets.org'
+gem 'seed_dump'
