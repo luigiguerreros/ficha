@@ -16,47 +16,58 @@
     <%= f.text_field :codigo %>
   </div>
 
-  <div class="field">  
+  <div class="field">
+    <%= f.label :origen_id %>
     <%= f.collection_select(:origen_id, Origen.all, :id, :nombre_origen, { prompt: "Origen" }) %>
   </div>
 
   <div class="field">
+    <%= f.label :campana_id %>
     <%= f.collection_select(:campana_id, Campana.all, :id, :nombre_camapana, { prompt: "Campana" }) %>
   </div>
 
   <div class="field">
+    <%= f.label :zonal_id %>
     <%= f.collection_select(:zonal_id, Zonal.all, :id, :nombre_zona, { prompt: "Zonal" }) %>
   </div>
 
   <div class="field">
+    <%= f.label :tipo_id %>
     <%= f.collection_select(:tipo_id, Tipo.all, :id, :nombre_tipo, { prompt: "Tipo" }) %>
   </div>
 
   <div class="field">
+    <%= f.label :subtipo_id %>
     <%= f.collection_select(:subtipo_id, Subtipo.all, :id, :nombre_subtipo, { prompt: "Subtipo" }) %>
   </div>
 
   <div class="field">
+    <%= f.label :paquete_id %>
     <%= f.collection_select(:paquete_id, Paquete.all, :id, :nombre_paquete, { prompt: "Paquete" }) %>
   </div>
 
   <div class="field">
+    <%= f.label :linea_id %>
     <%= f.collection_select(:linea_id, Linea.all, :id, :pack, { prompt: "Linea" }) %>
   </div>
 
   <div class="field">
-<%= f.collection_select(:internet_id, Internet.all, :id, :pack, { prompt: "Internet" }) %>
+    <%= f.label :internet_id %>
+    <%= f.collection_select(:internet_id, Internet.all, :id, :pack, { prompt: "Internet" }) %>
   </div>
 
   <div class="field">
+    <%= f.label :administrativa_id %>
     <%= f.collection_select(:administrativa_id, Administrativa.all, :id, :ps_administrativa, { prompt: "PS Administrativa" }) %>
   </div>
 
   <div class="field">
- <%= f.collection_select(:tecno_id, Tecno.all, :id, :tipo_tecnologia, { prompt: "Tecnologia" }) %>
+    <%= f.label :tecno_id %>
+    <%= f.collection_select(:tecno_id, Tecno.all, :id, :tipo_tecnologia, { prompt: "Tecnologia" }) %>
   </div>
 
   <div class="field">
+    <%= f.label :modopago_id %>
     <%= f.collection_select(:modopago_id, Modopago.all, :id, :modo_pago, { prompt: "Modo Pago" }) %>
   </div>
 
@@ -66,13 +77,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :promocion_id %>
-    <%= f.text_field :promocion_id %>
+    <%= f.label :descuento_id %>
+    <%= f.collection_select(:descuento_id, Descuento.all, :id, :ps_descuento, { prompt: "PS Descuento" }) %>
   </div>
 
   <div class="field">
-    <%= f.label :descuento_id %>
-    <%= f.text_field :descuento_id %>
+    <%= f.label :promocion_id %>
+    <%= f.collection_select(:promocion_id, Promocion.all, :id, :costo, { prompt: "Promocion" }) %>
   </div>
 
   <div class="field">
@@ -81,48 +92,54 @@
   </div>
 
   <div class="field">
-    <%= f.label :telefono_id %>
-    <%= f.text_field :telefono_id %>
+    <div class="field">
+      <%= f.label :telefono_id %>
+      <%= f.collection_select(:telefono_id, Telefono.all, :id, :nombre_telefono, { prompt: "Equipo Telefono" }) %>
+  </div>
+
   </div>
 
   <div class="field">
-    <%= f.label :caracteristicastelefono_id %>
-    <%= f.text_field :caracteristicastelefono_id %>
+    <div class="field">
+      <%= f.label :caracteristicatelefono_id %>
+      <%= f.collection_select(:caracteristicatelefono_id, Caracteristicatelefono.all, :id, :pack, { prompt: "Caracteristica Telefono" }) %>
+  </div>
+
   </div>
 
   <div class="field">
     <%= f.label :modem_id %>
-    <%= f.text_field :modem_id %>
+    <%= f.collection_select(:modem_id, Modem.all, :id, :nombre_modem, { prompt: "Equipo Modem" }) %>
   </div>
 
   <div class="field">
     <%= f.label :caracteristicamodem_id %>
-    <%= f.text_field :caracteristicamodem_id %>
+    <%= f.collection_select(:caracteristicamodem_id, Caracteristicamodem.all, :id, :pack, { prompt: "Caracteristica Modem" }) %>
   </div>
 
   <div class="field">
     <%= f.label :antenapunto_id %>
-    <%= f.text_field :antenapunto_id %>
+    <%= f.collection_select(:antenapunto_id, Antenapunto.all, :id, :nombre, { prompt: "Antena / Punto" }) %>
   </div>
 
   <div class="field">
     <%= f.label :deco1_id %>
-    <%= f.text_field :deco1_id %>
+    <%= f.collection_select(:deco1_id, Deco1.all, :id, :tipo, { prompt: "Deco 1" }) %>
   </div>
 
   <div class="field">
     <%= f.label :caracteristicadeco1_id %>
-    <%= f.text_field :caracteristicadeco1_id %>
+    <%= f.collection_select(:caracteristicadeco1_id, Caracteristicadeco1.all, :id, :pack, { prompt: "Caracteristica Deco 1" }) %>
   </div>
 
   <div class="field">
     <%= f.label :deco2_id %>
-    <%= f.text_field :deco2_id %>
+    <%= f.collection_select(:deco2_id, Deco2.all, :id, :tipo, { prompt: "Deco 2" }) %>
   </div>
 
   <div class="field">
     <%= f.label :caracteristicadeco2_id %>
-    <%= f.text_field :caracteristicadeco2_id %>
+    <%= f.collection_select(:caracteristicadeco2_id, Caracteristicadeco2.all, :id, :pack, { prompt: "Caracteristica Deco 2" }) %>
   </div>
 
   <div class="actions">

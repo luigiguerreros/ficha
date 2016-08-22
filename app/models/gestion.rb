@@ -13,7 +13,7 @@ class Gestion < ApplicationRecord
   belongs_to :promocion
   belongs_to :descuento
   belongs_to :telefono
-  belongs_to :caracteristicastelefono
+  belongs_to :caracteristicatelefono
   belongs_to :modem
   belongs_to :caracteristicamodem
   belongs_to :antenapunto

@@ -18,7 +18,10 @@
         <th>Zonal</th>
         <th>Tipo</th>
         <th>Subtipo</th>
+        <th>PS Paquete</th>
+        <th>Nombre Paquete</th>
         <th>Paquete</th>
+        <th>renta</th>
         <th>Linea</th>
         <th>Internet</th>
         <th>Administrativa</th>
@@ -26,10 +29,10 @@
         <th>Modopago</th>
         <th>Monto instalacion</th>
         <th>Promocion</th>
-        <th>Descuento</th>
+        <th>PS Descuento</th>
         <th>Equipamiento</th>
         <th>Telefono</th>
-        <th>Caracteristicastelefono</th>
+        <th>Caracteristica telefono</th>
         <th>Modem</th>
         <th>Caracteristicamodem</th>
         <th>Antenapunto</th>
@@ -45,30 +48,48 @@
       <% @gestions.each do |gestion| %>
         <tr>
           <td><%= gestion.codigo %></td>
-          <td><%= gestion.origen %></td>
-          <td><%= gestion.campana %></td>
-          <td><%= gestion.zonal %></td>
-          <td><%= gestion.tipo %></td>
-          <td><%= gestion.subtipo %></td>
-          <td><%= gestion.paquete %></td>
-          <td><%= gestion.linea %></td>
-          <td><%= gestion.internet %></td>
-          <td><%= gestion.administrativa %></td>
-          <td><%= gestion.tecno %></td>
-          <td><%= gestion.modopago %></td>
+          <td><%= gestion.origen.nombre_origen %></td>
+          <td><%= gestion.campana.nombre_camapana %></td>
+          <td><%= gestion.zonal.nombre_zona %></td>
+          <td><%= gestion.tipo.nombre_tipo %></td>
+          <td><%= gestion.subtipo.nombre_subtipo %></td>
+          
+          <td><%= gestion.paquete.ps_paquete %></td>
+          <td><%= gestion.paquete.nombre_paquete %></td>
+          <td><%= gestion.paquete.tipo_paquete %></td>
+          <td>S/.<%= gestion.paquete.renta %></td>
+
+          <td><%= gestion.linea.pack %><br><%= gestion.linea.tipo_pago %><br>S/.<%= gestion.linea.costo %></td>
+          <td><%= gestion.internet.pack %><br><%= gestion.internet.tipo_pago %><br>S/.<%= gestion.internet.costo %></td>
+
+          <td><%= gestion.administrativa.ps_administrativa %><br><%= gestion.administrativa.velocidad %></td>
+
+          <td><%= gestion.tecno.tipo_tecnologia %></td>
+          <td><%= gestion.modopago.modo_pago %></td>
           <td><%= gestion.monto_instalacion %></td>
-          <td><%= gestion.promocion %></td>
-          <td><%= gestion.descuento %></td>
+
+          <td>S/.<%= gestion.promocion.costo %> x <%= gestion.promocion.tiempo %> </td>
+          <td><%= gestion.descuento.ps_descuento %></td>
           <td><%= gestion.equipamiento %></td>
-          <td><%= gestion.telefono %></td>
-          <td><%= gestion.caracteristicastelefono %></td>
-          <td><%= gestion.modem %></td>
-          <td><%= gestion.caracteristicamodem %></td>
-          <td><%= gestion.antenapunto %></td>
-          <td><%= gestion.deco1 %></td>
-          <td><%= gestion.caracteristicadeco1 %></td>
-          <td><%= gestion.deco2 %></td>
-          <td><%= gestion.caracteristicadeco2 %></td>
+
+          <td><%= gestion.telefono.nombre_telefono %><br><%= gestion.telefono.ps_telefono %><br><%= gestion.telefono.oc_telefono %></td>
+
+          <td><%= gestion.caracteristicatelefono.pack %><br><%= gestion.caracteristicatelefono.tipo_pago %><br><%= gestion.caracteristicatelefono.costo %></td>
+
+          <td><%= gestion.modem.nombre_modem %><br><%= gestion.modem.ps_modem %><br><%= gestion.modem.oc_modem %></td>
+
+          <td><%= gestion.caracteristicamodem.pack %><br><%= gestion.caracteristicamodem.tipo_pago %><br>S/.<%= gestion.caracteristicamodem.costo %></td>
+
+          <td><%= gestion.antenapunto.tipo %><br><%= gestion.antenapunto.nombre %><br><%= gestion.antenapunto.ps %><br><%= gestion.antenapunto.oc %></td>
+
+          <td><%= gestion.deco1.tipo %><br><%= gestion.deco1.ps %><br><%= gestion.deco1.oc %></td>
+
+          <td><%= gestion.caracteristicadeco1.pack %><br><%= gestion.caracteristicadeco1.tipo_pago %><br><%= gestion.caracteristicadeco1.costo %></td>
+
+          <td><%= gestion.deco2.tipo %><br><%= gestion.deco2.ps %><br><%= gestion.deco2.oc %></td>
+
+          <td><%= gestion.caracteristicadeco2.pack %><br><%= gestion.caracteristicadeco2.tipo_pago %><br><%= gestion.caracteristicadeco2.costo %></td>
+
           <td><%= link_to 'Show', gestion %></td>
           <td><%= link_to 'Edit', edit_gestion_path(gestion) %></td>
           <td><%= link_to 'Destroy', gestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>

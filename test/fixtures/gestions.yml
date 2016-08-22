@@ -18,7 +18,7 @@ one:
   descuento: one
   equipamiento: MyString
   telefono: one
-  caracteristicastelefono: one
+  caracteristicatelefono: one
   modem: one
   caracteristicamodem: one
   antenapunto: one
@@ -45,7 +45,7 @@ two:
   descuento: two
   equipamiento: MyString
   telefono: two
-  caracteristicastelefono: two
+  caracteristicatelefono: two
   modem: two
   caracteristicamodem: two
   antenapunto: two
